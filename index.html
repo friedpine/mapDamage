@@ -133,8 +133,8 @@ the statistical function.</p>
 	<ol>
 		<li><b>Lambda</b>, the probability of termating an overhang.</li>
 		<li><b>DeltaD</b>, the cytosine deamination probability in <i>double</i> strand context.</li>
-        <li><b>DeltaS</b>, the cytosine deamination probability in <i>single</i> strand context.</li>
-        <li><b>Theta</b>, the mean difference rate between the reference and the sequenced sample not due to DNA damage.</li>
+        	<li><b>DeltaS</b>, the cytosine deamination probability in <i>single</i> strand context.</li>
+        	<li><b>Theta</b>, the mean difference rate between the reference and the sequenced sample not due to DNA damage.</li>
 	</ol>
 	</li>
 	<li>The <code>--rescale</code> parameter can be optionally used to rescale quality scores of likely damaged positions in the reads. A new BAM file is constructed by downscaling quality values for misincorporations likely due to ancient DNA damage according to their initial qualities, position in reads and damage patterns.</li>
@@ -170,7 +170,7 @@ a valid folder and the <code>--plot-only</code>, <code>--stats-only</code> or  <
 <ul>
 	<li><a href="images/E522_Fragmisincorporation_plot.png"><code>Fragmisincorporation_plot.pdf</code></a>, a pdf file that displays both fragmentation and misincorporation patterns.</li>
 	<li><a href="images/E522_Length_plot.png"><code>Length_plot.pdf</code></a>, a pdf file that displays length distribution of singleton reads per strand and cumulative 
-frequencies of C-&gt;T at 5'-end and G-&gt;A at 3'-end are also displayed per strand.</li>
+	frequencies of C-&gt;T at 5'-end and G-&gt;A at 3'-end are also displayed per strand. <br><b>Important remark</b>: paired-ended reads are not considered for this analysis since the plot displays the distribution of read lengths and not insert sizes of paired-ended reads. For this last purpose, one can use the dedicated Picard tool <a href="http://picard.sourceforge.net/command-line-overview.shtml#CollectInsertSizeMetrics">CollectInsertSizeMetrics</a>.</li>
 	<li><code>misincorporation.txt</code>, contains a table with occurrences for each type of mutations and relative positions from the reads ends.</li>
 	<li><code>5pCtoT_freq.txt</code>, contains frequencies of Cytosine to Thymine mutations per position from the 5'-ends.</li>
 	<li><code>3pGtoA_freq.txt</code>, contains frequencies of Guanine to Adenine mutations per position from the 3'-ends.</li>
