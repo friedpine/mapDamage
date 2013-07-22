@@ -93,7 +93,7 @@ and can be found at <a href="https://github.com/lh3/seqtk">here at github.</a></
     Follow the instructions available at <a href="http://git-scm.com/downloads">git</a>
 (with installers/packages available for all major operating systems).</li><br>
     </li>
-	<li><u>Install mapDamage:</u><br>
+	<li><u>First time installation for mapDamage:</u><br>
 	Clone the repository from GitHub<br><code>git clone https://github.com/ginolhac/mapDamage.git mapDamage</code><br>
 	go into the resulting folder<br><code>cd mapDamage</code><br>
 	then clone the submodules.<br><code>git submodule update --init</code><br>
@@ -120,6 +120,24 @@ If the installation of RcppGSL ended with an unsuccessfully then, download the t
 </ul>
 <p>Note that if steps 4-6 fail for some reason, then it is possible to utilize mapDamage without 
 the statistical function.</p>
+</ol>
+
+<h3>Update mapDamage</h3>
+When mapDamage is already git-installed, you can get the latest version using git pull.
+	<li><u>Pull from the git repository:</u><br>
+	go into the git folder<br><code>cd /path/to/mapDamage</code><br>
+	Check updates at GitHub and download them if any<br><code>git pull</code><br>
+	If there is no updates, the command returns: <code>Already up-to-date.</code><br>
+	If the last line looks like: <code>4 files changed, 49 insertions(+), 35 deletions(-)</code><br>
+	you can proceed with the next step.
+	</li>
+	<li><u>Install downloaded newer version:</u><br>
+	<p>Install the updated version if needed, by running the following command if you have administrator rights<br>
+<code>sudo python setup.py install</code><br>
+otherwise install it locally<br><code>python setup.py install --user</code><br>
+</li>
+
+
 
 <hr><h2><a name="a2">News in version 2.0</a></h2>
 <p align="right"><a href="#content">TOP</a></p>
