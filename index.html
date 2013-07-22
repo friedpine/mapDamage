@@ -489,6 +489,11 @@ from victims of the Black Death. <i>Proc Natl Acad Sci USA</i>. 2011 108:E746-52
 <p>A: update your ggplot2 package to at least version 0.9.2 by running:<br>
 <code>update.packages("ggplot2")</code><br>and selecting a CRAN mirror</p>
 
+<p>Q: Why do I do not get the Lengh_plot.pdf file? (or only a blank page)</p><br>
+<p>A: This is likely you are using paired-end reads. The length distribution is performed only for single-end reads using their lengths. 
+In theory, paired-end reads could also be used but we think this does not represent the real insert size and could be misleading. 
+Best results are obtained by using merged paired-end reads (mapped as single-end), so when the full inserts are sequenced.</p>
+
 <p>Q: How to clone the development version from github?</p>
 
 <p>A: Use the following commands</p>
