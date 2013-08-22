@@ -177,6 +177,14 @@ raise a warning but the program will proceed since all necessary references are 
 on an already processed dataset. Use a combination of <code>-d</code> option followed by 
 a valid folder and the <code>--plot-only</code>, <code>--stats-only</code> or  <code>--rescale-only</code> options.</p>
 
+<h3><a name="PE">Paired ends</a></h3>
+<p>
+We assume the pairs are facing inwards when counting the position specific misincorporations and rescaling quality scores. 
+An additional assumption in the rescaling process is the pairs are non-overlapping. 
+Make sure the pairing information in the BAM/SAM file is correct as we rely on the paired end information provided by the file.
+We advise not using non-overlapping paired ends coming from highly degraded samples (small template lengths) as they are 
+likely contamination. 
+</p>
 <h2><a name="a4">Output files</a></h2>
 <p align="right"><a href="#content">TOP</a></p>
 <p>When all options are activated, 16 files are produced in the result folder.</p>
