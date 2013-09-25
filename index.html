@@ -68,6 +68,8 @@
 <li>
 <a href="http://code.google.com/p/pysam/">pysam</a> (version &gt;= 0.6) python package, an interface for reading/writing SAM/BAM files</li>
 <li>
+<a href="http://www.cython.org">Cython</a> package, only necessary if pysam needs to be built</li>
+<li>
 <a href="http://www.gnu.org/software/gsl/">gsl</a> GNU scientific library (GSL) </li>
 <li>R libraries:
 
@@ -104,8 +106,8 @@ then, <code>$HOME/.local/bin</code> must be in your PATH.</p>
 </li>
 <li><u>Install pysam:</u><br>
 Download the tarball archive for <a href="http://code.google.com/p/pysam/downloads/list">pysam</a>.
-Untar the downloaded tar file and follow instructions in the pysam-XXX/INSTALL text file. It is recommend to check if the pysam installation seems okay before proceeding with the following command<br><code>python -c "import pysam"</code><br>
-If nothing appears then proceed.</p></li>
+Untar the downloaded tar file and follow instructions in the pysam-XXX/INSTALL text file. <a href="http://www.cython.org">Cython</a> is necessary if pysam needs to be built.<br>It is recommend to check if the pysam installation seems okay before proceeding with the following command<br><code>python -c "import pysam"</code><br>
+If nothing appears, then proceed.</p></li>
 <li><u>Install R:</u><br>
 Follow the instructions available at <a href="http://www.r-project.org/">R project</a>
 (with installers/packages available for all major operating systems).</li><br>
