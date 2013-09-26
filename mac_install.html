@@ -30,9 +30,9 @@
 	      <section id="main-content">
 
 
-<h3>Frech installation on Mac OS using MacPorts</h3>
+<h3>Fresh installation on Mac OS using MacPorts</h3>
 
-<p>Tutorial written by Julien Soubrier</p>
+<p>Tutorial written by Julien Soubrier Bastien Llamas, tested on MacOS version 10.8.5.</p>
 
 <ol>
     <li>
@@ -65,11 +65,12 @@ Download the tarball archive for <a href="https://code.google.com/p/pysam/downlo
 
 <li><u>Install R:</u><br>
 Follow the instructions available at <a href="http://www.r-project.org/">R project</a>
-(with installers/packages available for all major operating systems).</li><br>
+(with installers/packages available for all major operating systems). Or use MacPorts:<br>
+<code>sudo port install r</code></li><br>
 <li><u>Install the R packages:</u><br>
 By running in a R console and selecting a CRAN mirror:<br><code>install.packages("inline")</code><br><code>install.packages("gam")</code><br><code>install.packages("Rcpp")</code><br><code>install.packages("ggplot2")</code></li><br>
-<li><u>Install the  GSL library <a href="http://www.gnu.org/software/gsl/">gsl</a>:</u><br>
-Using MacPorts<br><code>sudo port install gsl</code><br>
+<li><u>Install the  GSL library gsl:</u><br>
+Follow the instructions available at <a href="http://www.gnu.org/software/gsl/">gsl website</a> or using MacPorts:<br><code>sudo port install gsl</code><br>
 </li><br>
 <li><u>Install RcppGSL:</u><br>
 In a R session do the following<br><code>install.packages("RcppGSL", repos='http://cran.us.r-project.org')</code><br></li>
