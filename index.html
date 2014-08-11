@@ -96,9 +96,10 @@ and can be found at <a href="https://github.com/lh3/seqtk">here at github.</a></
 (with installers/packages available for all major operating systems).</li><br>
     </li>
 	<li><u>First time installation for mapDamage:</u><br>
-	Clone the repository from GitHub<br><code>git clone https://github.com/ginolhac/mapDamage.git mapDamage</code><br>
-	go into the resulting folder<br><code>cd mapDamage</code><br>
-	then clone the submodules.<br><code>git submodule update --init</code><br>
+	Clone the repository from GitHub<br>
+	<code>git clone --recursive https://github.com/ginolhac/mapDamage.git</code><br>
+	go into the resulting folder<br>
+	<code>cd mapDamage</code><br>
 	<p>Continue the procedure by running the following command if you have administrator rights<br>
 <code>sudo python setup.py install</code><br>
 otherwise install it locally<br><code>python setup.py install --user</code><br>
@@ -507,9 +508,7 @@ Best results are obtained by using merged paired-end reads (mapped as single-end
 <p>Q: How to clone the development version from github?</p>
 
 <p>A: Use the following commands</p>
-<p><code>git clone https://github.com/ginolhac/mapDamage.git mapDamage</code><br>
-<code>cd mapDamage</code> 
-<code>git submodule update --init</code></p>
+<p><code>git clone --recursive https://github.com/ginolhac/mapDamage.git</code><br>
 
 <p>Q: Where is the original version of mapDamage?</p>
 
